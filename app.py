@@ -10,7 +10,7 @@ router = Router()
 @router.message(CommandStart())
 async def send_web_app(msg: types.Message, command: CommandStart):
     await msg.answer(
-        text="Добро пожаловать в бот для лидов",
+        text="Добро пожаловать в приложение Rollwonders",
         reply_markup=types.ReplyKeyboardMarkup(
             keyboard=[
                 [types.KeyboardButton(text="Открыть приложение",
