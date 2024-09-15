@@ -14,7 +14,7 @@ async def send_web_app(msg: types.Message, command: filters.CommandStart):
         inline_keyboard=[
             [
                 types.InlineKeyboardButton(text="Открыть приложение",
-                                           web_app=types.WebAppInfo(url="bot.rollwonders.ru/")),
+                                           web_app=types.WebAppInfo(url="https://bot.rollwonders.ru/")),
             ]
         ]
     )
