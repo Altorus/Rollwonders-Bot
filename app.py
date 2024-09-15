@@ -14,7 +14,7 @@ async def send_web_app(msg: types.Message, command: filters.CommandStart):
         inline_keyboard=[
             [
                 types.InlineKeyboardButton(text="Открыть приложение",
-                                           web_app=types.WebAppInfo(url="https://mhand.ru/")),
+                                           web_app=types.WebAppInfo(url="bot.rollwonders.ru/")),
             ]
         ]
     )
@@ -27,7 +27,7 @@ async def send_web_app(msg: types.Message, command: filters.CommandStart):
 async def set_web_app_menu_button(bot: Bot):
     menu_button = types.MenuButtonWebApp(
         text="Создать рецепт",
-        web_app=types.WebAppInfo(url="https://mhand.ru/about/")
+        web_app=types.WebAppInfo(url="https://bot.rollwonders.ru/make-recipe/")
     )
 
     await bot.set_chat_menu_button(menu_button=menu_button)
